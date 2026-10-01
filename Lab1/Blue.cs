@@ -1,4 +1,6 @@
-﻿namespace Lab1
+using System.ComponentModel.Design;
+
+namespace Lab1
 {
     public class Blue
     {
@@ -7,10 +9,24 @@
             bool answer = false;
 
             // code here
+            if (a == 0 || b == 0)
+            {
+                answer = false;
+            }
+            if ((a > 0 && b > 0) || (a < 0 && b < 0))
 
-            // end
 
-            return answer;
+                {
+                    answer = true;
+                }
+                else
+                {
+                    answer = false;
+                }
+                    // end
+
+                    return answer;
+                
         }
         public bool Task2(double d)
         {
